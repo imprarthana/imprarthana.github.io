@@ -51,6 +51,8 @@ a:focus {
   border-color: #ffffff;
 }
 .hero img {
+  display: flex;
+  float: right;
   max-width: 80%;
   max-height: 80%;
 }
