@@ -121,22 +121,30 @@ a:focus {
 .service .container {
   padding: 15px 15px;
 }
-.favicon {
+.service-item {
+  display: flex;
+  align-items: center;
+}
+.service-icon {
   position: relative;
   display: flex;
   align-items: center;
   color: #ef233c;
   font-size: 60px;
-  float: left;
-  height: 150px;
-  width: 150px;
+  min-height: 150px;
+  min-width: 170px;
   border: 1px solid #ef233c;
   justify-content: center;
+  margin-right: 30px;
 }
-.text {
+.service .service-icon i {
   position: relative;
-  float: right;
-  height: 100%;
-  width: 65%;
+  font-size: 60px;
+  color: #ef233c;
+  /* transition: 0.3s; */
+}
+
+.text {
+  /* position: relative; */
   padding: 20px 0px;
 }
