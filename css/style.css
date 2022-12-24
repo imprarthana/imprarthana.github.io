@@ -132,11 +132,17 @@ a:focus {
   color: #ef233c;
   font-size: 60px;
   min-height: 150px;
-  min-width: 170px;
+  width: 170px;
   border: 1px solid #ef233c;
   justify-content: center;
   margin-right: 30px;
 }
+.service .service-text {
+  position: relative;
+  width: calc(100% - 170px);
+  padding: 0 30px;
+}
+
 .service .service-icon i {
   position: relative;
   font-size: 60px;
@@ -146,5 +152,5 @@ a:focus {
 
 .text {
   /* position: relative; */
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
 }
