@@ -42,6 +42,7 @@ a:focus {
   color: #ffffff;
   position: relative;
   width: 100%;
+  min-height: 100%;
   margin-bottom: 45px;
   padding: 120px 0 0 0;
   overflow: hidden;
@@ -132,7 +133,7 @@ a:focus {
   color: #ef233c;
   font-size: 60px;
   min-height: 150px;
-  width: 170px;
+  min-width: 170px;
   border: 1px solid #ef233c;
   justify-content: center;
   margin-right: 30px;
