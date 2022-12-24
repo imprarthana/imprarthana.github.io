@@ -10,7 +10,10 @@ a {
 h4 {
   color: #313131;
 }
-
+h2 {
+  color: #414141;
+  font-size: 50px;
+}
 a:hover,
 a:active,
 a:focus {
@@ -63,12 +66,31 @@ a:focus {
 .hero .herotext .typed-text {
   display: none;
 }
+.about {
+  position: relative;
+  width: 100%;
+  margin: -45px 0 45px 0;
+}
 
 .Aboutimage img {
-  position: relative;
+  /* position: relative;
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: contain; */
+}
+.skillname {
+  margin-top: 15px;
+}
+.skillname > p {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.skillname p:last-child {
+  float: right;
+}
+.SectionHeader > p {
+  text-align: center;
+  font-weight: bolder;
 }
 .serviceheader p::before {
   position: absolute;
@@ -115,6 +137,6 @@ a:focus {
   position: relative;
   float: right;
   height: 100%;
-  /* width: 70%; */
-  padding: 20px 20px;
+  width: 65%;
+  padding: 20px 0px;
 }
