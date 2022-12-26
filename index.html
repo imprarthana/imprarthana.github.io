@@ -30,21 +30,10 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <!-- data-spy="scroll" data-target=".navbar" data-offset="51"> -->
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
       <div class="container-fluid">
-        <!-- <a href="index.html" class="navbar-brand">DevFolio</a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-
         <div
           class="collapse navbar-collapse justify-content-between"
           id="navbarCollapse"
@@ -55,55 +44,35 @@
             <a href="#service" class="nav-item nav-link">Service</a>
             <a href="#experience" class="nav-item nav-link">Experience</a>
             <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-            <a href="#price" class="nav-item nav-link">Price</a>
-            <a href="#review" class="nav-item nav-link">Review</a>
-            <a href="#team" class="nav-item nav-link">Team</a>
             <a href="#blog" class="nav-item nav-link">Blog</a>
             <a href="#contact" class="nav-item nav-link">Contact</a>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- <div class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav ml-auto">
-            <a href="#" class="nav-item nav-link active">About Me</a>
-            <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link active">Experience</a>
-            <a href="#" class="nav-item nav-link active">Education</a>
-            <a href="#" class="nav-item nav-link active">Blog</a>
-            <a href="#" class="nav-item nav-link active">Contact</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <!-- nav box ends -->
     <!-- hero starts -->
     <div class="hero">
       <div class="container-fluid">
         <div class="row align-items-centre">
           <div class="col-sm-12 col-md-6">
-            <div class="herotext" style="font-weight: bolder">
-              <p style="font-size: 30px">I'm</p>
-              <h1>Prarthana</h1>
-              <h2></h2>
-
+            <div class="hero-content">
+              <div class="herotext" style="font-weight: bolder">
+                <p style="font-size: 30px">I'm</p>
+                <h1>Prarthana</h1>
+                <h2></h2>
+              </div>
               <div class="typed-text" style="font-size: 40px">
                 Web designer, Content Writer, Chemist
               </div>
-
               <div class="hero-btn">
                 <a href="#" class="btn" role="button">Hire Me</a>
-                <a href="#" class="btn" role="button">Contact</a>
+                <a href="#" class="btn" role="button">Contact Me</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 d-none d-md-block">
+          <div class="image col-sm-12 col-md-6 d-none d-md-block">
+            <!-- <div class="image col-lg-6 col-md-6 d-none d-lg-block"> -->
             <img src="assets/prarthana-R.webp" alt="Prarthana" />
           </div>
         </div>
@@ -111,12 +80,15 @@
     </div>
     <!-- hero ends -->
     <!-- About Start -->
-    <div class="about fadeInUp" data-wow-delay="5s">
+    <div class="about fadeInUp" data-wow-delay="5s" id="About">
       <div class="container-fluid">
         <div class="row align-item-centre">
           <div class="col-lg-6">
             <div class="Aboutimage">
               <img src="assets/aboutme.jpg" alt="About Me" />
+            </div>
+            <div class="Aboutimage1">
+              <img src="assets/prarthana-R.webp" alt="Prarthana" />
             </div>
           </div>
           <div class="col-lg-6">
@@ -203,14 +175,14 @@
     </div>
 
     <!-- What I Do starts -->
-    <div class="service">
+    <div class="service" id="Service">
       <div class="container">
         <div class="serviceheader">
           <p>WHAT I DO</p>
           <h2>Awesome Quality Services</h2>
         </div>
         <div class="row">
-          <div class="container col-sm-12 col-md-6 d-md-block">
+          <div class="container col-lg-6 wow FadeInUp" data-wow-delay="0.0s">
             <div class="service-item">
               <div class="service-icon">
                 <i class="fa fa-laptop"></i>
@@ -224,7 +196,7 @@
               </div>
             </div>
           </div>
-          <div class="container col-sm-12 col-md-6 d-md-block">
+          <div class="container col-lg-6 wow FadeInUp" data-wow-delay="0.2s">
             <div class="service-item">
               <div class="service-icon">
                 <i class="fa fa-pen"></i>
@@ -238,7 +210,7 @@
               </div>
             </div>
           </div>
-          <div class="container col-sm-12 col-md-6 d-md-block">
+          <div class="container col-lg-6 wow FadeInUp" data-wow-delay="0.4s">
             <div class="service-item">
               <div class="service-icon">
                 <i class="fa fa-laptop-code"></i>
@@ -252,7 +224,7 @@
               </div>
             </div>
           </div>
-          <div class="container col-sm-12 col-md-6 d-md-block">
+          <div class="container col-lg-6 FadeInUp" data-wow-delay="0.6s">
             <div class="service-item">
               <div class="service-icon">
                 <i class="fa fa-laptop-code"></i>
