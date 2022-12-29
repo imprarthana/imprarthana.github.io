@@ -219,13 +219,16 @@ a:focus {
   box-shadow: inset 800px 0 0 0 #ef233c;
 }
 
+.service .service-item:focus i,
 .service .service-item:hover i {
   font-size: 75px;
 }
+.service .service-item:focus .text,
 .service .service-item:hover .text {
   color: white;
   background-color: #ef233c;
 }
+.service .service-item:focus h4,
 .service .service-item:hover h4 {
   color: white;
 }
