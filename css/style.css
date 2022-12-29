@@ -39,6 +39,50 @@ a:focus {
   z-index: 999;
 }
 
+.sidebar {
+  display: none;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ef233c;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+#main {
+  display: none;
+  padding: 0 16px 16px 16px;
+}
+
 .hero {
   display: flex;
   color: #ffffff;
@@ -96,12 +140,6 @@ a:focus {
 }
 .aboutcontent {
   padding: 60px;
-}
-.Aboutimage1 > img {
-  display: none;
-  border: solid 5px #ef233c;
-  /* margin-top: 200px; */
-  /* padding-top: 50px; */
 }
 .skillname {
   margin-top: 15px;
@@ -204,20 +242,11 @@ a:focus {
   }
 }
 @media only screen and (max-width: 550px) {
-  body {
-    /* background-color: yellow; */
-  }
   .hero {
     margin-bottom: 50px;
   }
   .Aboutimage > img {
     display: none;
-  }
-  .Aboutimage1 > img {
-    display: flex;
-    height: 200px;
-    width: 200px;
-    margin: auto;
   }
   .aboutcontent {
     padding: 40px 10px;
@@ -233,5 +262,17 @@ a:focus {
   }
   .service-item .text > p {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+  .sidebar {
+    display: block;
+  }
+  #main {
+    display: flex;
   }
 }
