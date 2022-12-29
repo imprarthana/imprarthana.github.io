@@ -39,6 +39,10 @@ a:focus {
   z-index: 999;
 }
 
+.navbar .navbar-nav > a:active {
+  font-weight: bold;
+}
+
 .sidebar {
   display: none;
   height: 100%;
@@ -233,6 +237,31 @@ a:focus {
   color: white;
 }
 
+footer {
+  text-align: center;
+  color: #ffffff;
+  background-color: #ef233c;
+  padding: 50px 0 20px 0;
+}
+footer > h3 {
+  font-size: 35px;
+}
+footer .footer-icons {
+  color: #ffffff;
+  word-spacing: 30px;
+  font-weight: bold;
+}
+
+footer .footer-icons > a {
+  color: #ffffff;
+  font-size: 23px;
+}
+.divider {
+  padding: 10px 80px;
+}
+.divider > hr {
+  border-color: #ffffff;
+}
 @media only screen and (max-width: 1000px) {
   body {
     /* background-color: lightblue; */
@@ -265,6 +294,9 @@ a:focus {
   }
   .service-item .text > p {
     font-size: 15px;
+  }
+  .divider {
+    padding: 10px 20px;
   }
 }
 
