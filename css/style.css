@@ -166,7 +166,8 @@ a:focus {
   float: right;
 }
 .progress {
-  border-radius: 100px;
+  border-radius: 50px;
+  height: 10px;
 }
 .SectionHeader > p {
   font-weight: bolder;
