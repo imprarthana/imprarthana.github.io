@@ -168,6 +168,21 @@ a:focus {
 .progress {
   border-radius: 50px;
   height: 10px;
+  background-color: #e9ecef;
+}
+.progress-bar {
+  background-color: red;
+  animation-name: myframes;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+@keyframes myframes {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100;
+  }
 }
 .SectionHeader > p {
   font-weight: bolder;
