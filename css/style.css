@@ -314,6 +314,13 @@ footer .footer-icons > a {
   .navbar {
     display: none;
   }
+<<<<<<< HEAD
+=======
+  .sidebar {
+    display: block;
+    width: 0px;
+  }
+>>>>>>> 7a84f9099d5ccc6963666c16ab03be7e0fd09bb5
   #main {
     display: flex;
   }
