@@ -306,6 +306,7 @@ footer .footer-icons > a {
   }
   .sidebar {
     display: block;
+    width: 0px;
   }
   #main {
     display: flex;
