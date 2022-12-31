@@ -42,16 +42,21 @@ a:focus {
 .navbar .navbar-nav > a:active {
   font-weight: bold;
 }
+#main {
+  display: none;
+  padding: 0 16px 16px 16px;
+}
 
 .sidebar {
   display: none;
+  top: 0;
+  width: 0;
   height: 100%;
   position: fixed;
   z-index: 1;
   background-color: whitesmoke;
   overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  transition: 0.7s;
 }
 
 .sidebar a {
@@ -66,6 +71,13 @@ a:focus {
 .sidebar a:hover {
   color: #ef233c;
 }
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
 
 .sidebar .closebtn {
   position: absolute;
@@ -75,26 +87,15 @@ a:focus {
   margin-left: 50px;
 }
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  color: black;
-  border: none;
-}
-#main {
-  display: none;
-  padding: 0 16px 16px 16px;
-}
-
 .hero {
   display: flex;
   color: #ffffff;
   position: relative;
   width: 100%;
+  min-height: auto;
   height: 100vh;
   margin-bottom: 45px;
-  padding: 120px 0 0 0;
+  /* padding: 120px 0 0 0; */
   overflow: hidden;
   background: linear-gradient(rgba(239, 35, 60, 0.95), rgba(239, 35, 60, 0.95)),
     url(../assets/hero-bg.jpg);
@@ -118,11 +119,20 @@ a:focus {
   background: transparent;
   border-color: #ffffff;
 }
+.hero .image > img {
+  position: relative;
+}
 .hero img {
-  display: flex;
+  position: relative;
+  display: inline-block;
   float: right;
-  max-width: 80%;
-  max-height: 80%;
+  /* max-width: 80%; */
+  /* max-height: 80%; */
+  width: 248px;
+  height: 260px;
+  align-items: baseline;
+
+  bottom: 0;
 }
 .hero .container-fluid {
   padding: 0;
@@ -304,10 +314,10 @@ footer .footer-icons > a {
   .navbar {
     display: none;
   }
-  .sidebar {
-    display: block;
-  }
   #main {
     display: flex;
+  }
+  .sidebar {
+    display: block;
   }
 }
