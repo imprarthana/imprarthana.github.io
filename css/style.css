@@ -92,10 +92,9 @@ a:focus {
   color: #ffffff;
   position: relative;
   width: 100%;
-  min-height: auto;
-  height: 100vh;
-  margin-bottom: 45px;
-  /* padding: 120px 0 0 0; */
+  height: 610px;
+  /* margin-bottom: 45px; */
+  padding: 120px 0 0 0;
   overflow: hidden;
   background: linear-gradient(rgba(239, 35, 60, 0.95), rgba(239, 35, 60, 0.95)),
     url(../assets/hero-bg.jpg);
@@ -125,21 +124,35 @@ a:focus {
   background: transparent;
   border-color: #ffffff;
 }
-.hero .image > img {
+/* .hero .hero-image {
   position: relative;
+  text-align: ;
+  /* padding-top: 150px; */
+/* padding-right: 15px;
+  right: 0;
+  height: 100%;
+  background-color: aqua;
 }
-.hero img {
-  position: relative;
-  display: inline-block;
-  float: right;
-  /* max-width: 80%; */
-  /* max-height: 80%; */
-  width: 248px;
-  height: 260px;
-  align-items: baseline;
 
-  bottom: 0;
+.hero .hero-image > img {
+  position: relative;
+  width: 100%;
+  max-height: 70%;
+  object-fit: contain;
+}  */
+.hero .hero-image {
+  position: relative;
+  text-align: right;
+  padding-right: 75px;
 }
+
+.hero .hero-image img {
+  max-width: 80%;
+  /* max-height: 80%; */
+  height: fit-content;
+  object-fit: contain;
+}
+
 .hero .container-fluid {
   padding: 0;
 }
@@ -149,7 +162,18 @@ a:focus {
   font-weight: 300;
   color: #ffffff;
 }
-
+#about {
+  /* opacity: 0; */
+  transform: translateY(20vh);
+  /* visibility: hidden; */
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+#about.visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
 .about {
   position: relative;
   width: 100%;
@@ -267,6 +291,128 @@ a:focus {
 .service .service-item:focus h4,
 .service .service-item:hover h4 {
   color: white;
+}
+.experience {
+  position: relative;
+  padding: 45px 0 15px 0;
+}
+
+.experience .timeline {
+  position: relative;
+  width: 100%;
+}
+
+.experience .timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #ef233c;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.experience .timeline .timeline-item {
+  position: relative;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.experience .timeline .timeline-item.left {
+  left: 0;
+  padding-right: 30px;
+}
+
+.experience .timeline .timeline-item.right {
+  left: 50%;
+  padding-left: 30px;
+}
+
+.experience .timeline .timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 48px;
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #ef233c;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.experience .timeline .timeline-item.right::after {
+  left: -8px;
+}
+
+.experience .timeline .timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 46px;
+  right: 10px;
+  z-index: 1;
+  border: 10px solid;
+  border-color: transparent transparent transparent #dddddd;
+}
+
+.experience .timeline .timeline-item.right::before {
+  left: 10px;
+  border-color: transparent #dddddd transparent transparent;
+}
+
+.experience .timeline .timeline-date {
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ef233c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.experience .timeline .timeline-item.left .timeline-date {
+  text-align: left;
+  left: calc(100% + 55px);
+}
+
+.experience .timeline .timeline-item.right .timeline-date {
+  text-align: right;
+  right: calc(100% + 55px);
+}
+
+.experience .timeline .timeline-text {
+  padding: 30px;
+  background: #ffffff;
+  position: relative;
+  border-right: 5px solid #dddddd;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
+}
+
+.experience .timeline .timeline-item.right .timeline-text {
+  border-right: none;
+  border-left: 5px solid #dddddd;
+}
+
+.experience .timeline .timeline-text h2 {
+  margin: 0 0 5px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.experience .timeline .timeline-text h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.experience .timeline .timeline-text p {
+  margin: 0;
+  font-size: 16px;
 }
 
 footer {
