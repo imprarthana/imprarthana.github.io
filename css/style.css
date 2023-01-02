@@ -201,7 +201,7 @@ a:focus {
   background-color: #e9ecef;
 }
 .progress-bar {
-  background-color: red;
+  background-color: #ef233c;
   animation-name: myframes;
   animation-duration: 2s;
   animation-timing-function: ease;
@@ -300,6 +300,9 @@ a:focus {
 .experience .timeline {
   position: relative;
   width: 100%;
+}
+.experience header > p {
+  font-weight: bolder;
 }
 
 .experience .timeline::after {
@@ -482,6 +485,100 @@ footer .footer-icons > a {
   }
   .divider {
     padding: 10px 20px;
+  }
+  .experience {
+    display: block;
+    width: 100%;
+  }
+  .experience .timeline .timeline-item {
+    width: 100%;
+  }
+  .experience .timeline .timeline-item.right {
+    left: 0;
+    padding-right: 30px;
+  }
+  .experience .timeline::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: #ef233c;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+  }
+  .experience .timeline .timeline-item::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 48px;
+    left: -8px;
+    background: #ffffff;
+    border: 2px solid #ef233c;
+    border-radius: 16px;
+    z-index: 1;
+  }
+  .experience .timeline .timeline-item.right::after {
+    left: -8px;
+  }
+  .experience .timeline .timeline-item.right::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 46px;
+    z-index: 1;
+    border: 10px solid;
+    left: 0px;
+    border-color: transparent #dddddd transparent transparent;
+  }
+  .experience .timeline .timeline-item.left::before {
+    left: 0px;
+    border-color: transparent #dddddd transparent transparent;
+  }
+  .experience .timeline .timeline-text {
+    padding: 30px;
+    left: -10px;
+    background: #ffffff;
+    position: relative;
+    border-right: 5px solid #dddddd;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
+  }
+
+  .experience .timeline .timeline-item.left .timeline-text {
+    border-right: none;
+    left: 20px;
+    border-left: 5px solid #dddddd;
+  }
+  .experience .timeline .timeline-item.left {
+    left: 20px;
+    padding-right: 60px;
+  }
+
+  .experience .timeline .timeline-item.right {
+    left: 20px;
+    padding-left: 30px;
+  }
+  .timeline .timeline-text {
+    display: block;
+  }
+  .experience .timeline .timeline-item.left .timeline-date {
+    top: 10px;
+    text-align: left;
+    left: 30px;
+  }
+
+  .experience .timeline .timeline-item.right .timeline-date {
+    top: 10px;
+    text-align: left;
+    left: 30px;
+  }
+  .experience .timeline .timeline-text > h2 {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .experience header > h2 {
+    font-size: 35px;
   }
 }
 
