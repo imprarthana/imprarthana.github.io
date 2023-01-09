@@ -45,12 +45,13 @@ a:focus {
 }
 #main {
   display: none;
+  top: 0;
   padding: 0 16px 16px 16px;
 }
 
 .sidebar {
   display: none;
-  top: 0;
+  top: 0px;
   width: 0;
   height: 100%;
   position: fixed;
@@ -94,7 +95,6 @@ a:focus {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 120px 0 0 0;
   overflow: hidden;
   background: linear-gradient(rgba(239, 35, 60, 0.95), rgba(239, 35, 60, 0.95)),
     url(../assets/hero-bg.jpg);
@@ -103,7 +103,7 @@ a:focus {
   background-size: cover;
 }
 .hero-content {
-  padding-top: 100px;
+  padding-top: 220px;
   padding-left: 100px;
 }
 .hero .herotext > p {
@@ -588,7 +588,9 @@ footer .footer-icons > a {
 @media only screen and (max-width: 550px) {
   .hero {
     margin-bottom: 50px;
-    align-items: center;
+  }
+  .hero-content {
+    padding-top: 140px;
   }
   .hero .herotext > p {
     font-size: 20px;
@@ -807,7 +809,6 @@ footer .footer-icons > a {
     font-size: 35px;
   }
 }
-
 @media only screen and (max-width: 1000px) {
   .navbar {
     display: none;
@@ -818,8 +819,5 @@ footer .footer-icons > a {
   }
   #main {
     display: flex;
-  }
-  .sidebar {
-    display: block;
   }
 }
