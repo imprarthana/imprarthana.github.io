@@ -163,9 +163,7 @@ a:focus {
   color: #ffffff;
 }
 #about {
-  /* opacity: 0; */
   transform: translateY(20vh);
-  /* visibility: hidden; */
   transition: opacity 0.6s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
@@ -443,12 +441,12 @@ a:focus {
 
 .education .timeline .timeline-item {
   position: relative;
-  width: 30%;
+  width: 50%;
   margin-bottom: 30px;
 }
 
 .education .timeline .timeline-item.left {
-  left: 20%;
+  left: 0;
   padding-right: 30px;
 }
 
