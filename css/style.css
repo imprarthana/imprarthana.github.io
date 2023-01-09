@@ -302,7 +302,10 @@ a:focus {
 .experience header > p {
   font-weight: bolder;
 }
-
+.experience .timeline .timeline-item a {
+  text-decoration: underline;
+  color: blue;
+}
 .experience .timeline::after {
   content: "";
   position: absolute;
