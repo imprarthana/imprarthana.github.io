@@ -551,6 +551,9 @@ footer {
   background-color: #ef233c;
   padding: 50px 0 20px 0;
 }
+footer a {
+  color: white;
+}
 footer > h3 {
   font-size: 35px;
 }
@@ -558,6 +561,7 @@ footer .footer-icons {
   color: #ffffff;
   word-spacing: 30px;
   font-weight: bold;
+  padding-top: 10px;
 }
 
 footer .footer-icons > a {
