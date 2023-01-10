@@ -539,6 +539,7 @@ footer {
   color: #ffffff;
   background-color: #ef233c;
   padding: 50px 0 20px 0;
+  width: 100%;
 }
 footer a {
   color: white;
@@ -607,8 +608,15 @@ footer .footer-icons > a {
     padding-right: 10px;
     padding-top: 10px;
   }
+  .hero-content-resp .herotext .text > h2 {
+    font-size: 10px; !important
+  }
   .hero-content-resp .container {
     display: flex;
+  }
+  .hero-content-resp .hero-image > img {
+    max-height: 500px;
+    max-width: 80%;
   }
   .container .hero-btn {
     padding-top: 100px;
