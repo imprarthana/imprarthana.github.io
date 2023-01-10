@@ -551,6 +551,17 @@ a:focus {
   transition: ease-out 5s;
   border: solid 1px #ededed;
 }
+.blog .blog-image >img{
+  height: 350px;
+  width: 100%;
+}
+.blog .text{
+  padding: 25px 20px 5px 20px;
+}
+.blog .blog-btn{
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
 .blog .blog-btn .btn {
   background-color: #ef233c;
   color: #ffffff;
