@@ -574,6 +574,9 @@ a:focus {
   background: transparent;
   border-color: #ef233c;
 }
+.blog .blog1{
+  display: none;
+}
 
 
 footer {
