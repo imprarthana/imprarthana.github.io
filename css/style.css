@@ -540,6 +540,7 @@ a:focus {
 }
 .blog {
   position: relative;
+  margin-top: 45px;
 }
 .blog .container {
   padding: 15px 15px;
@@ -547,8 +548,8 @@ a:focus {
 .blog-item {
   position: relative;
   display: block;
-  box-shadow: inset 0 0 0 0 transparent;
   transition: ease-out 5s;
+  border: solid 1px #ededed;
 }
 .blog .blog-btn .btn {
   background-color: #ef233c;
