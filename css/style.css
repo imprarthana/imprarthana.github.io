@@ -551,9 +551,12 @@ a:focus {
   transition: ease-out 5s;
   border: solid 1px #ededed;
 }
+.blog .blog-image{
+  text-align: center;
+}
 .blog .blog-image >img{
-  height: 350px;
-  width: 100%;
+  /* height: 350px; */
+  /* width: 100%; */
 }
 .blog .text{
   padding: 25px 20px 5px 20px;
@@ -610,9 +613,6 @@ footer .footer-icons > a {
   border-color: #ffffff;
 }
 @media only screen and (max-width: 1000px) {
-  body {
-    /* background-color: lightblue; */
-  }
   .hero-content {
     align-items: center;
     justify-content: center;
@@ -621,18 +621,6 @@ footer .footer-icons > a {
   }
 }
 @media only screen and (max-width: 550px) {
-  /* .hero {
-    margin-bottom: 50px;
-  }
-  .hero-content {
-    padding-top: 140px;
-  }
-  .hero .herotext > p {
-    font-size: 20px;
-  }
-  .hero .herotext > h2 {
-    font-size: 25px;
-  } */
   .hero-content {
     display: none;
   }
