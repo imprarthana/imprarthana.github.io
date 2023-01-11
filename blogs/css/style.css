@@ -28,6 +28,9 @@ body {
   font-weight: 55px;
   line-height: 25px;
 }
+.blog-text p > b {
+  color: #313131;
+}
 .articles {
   position: sticky;
   top: 0;
@@ -42,4 +45,12 @@ body {
   font-size: 20px;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 850px) {
+  .articles {
+    /* position: relative; */
+    /* background-color: yellowgreen; */
+    /* width: 20%; */
+    display: none;
+  }
 }
